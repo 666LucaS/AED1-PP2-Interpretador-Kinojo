@@ -57,9 +57,7 @@ private:
   void remove(Type &, Node<Type> *&);
   void removeAux(Node<Type> *&, Node<Type> *&);
   Type search(Type &, Node<Type> *&);
-  void preOrderTreeWalk(Node<Type> *&);
   void inOrderTreeWalk(Node<Type> *&);
-  void postOrderTreeWalk(Node<Type> *&);
   void rightrightRotation(Node<Type> *&,Node<Type> *&);
   void leftleftRotation(Node<Type> *&,Node<Type> *&);
   void doubleRightLeftRotation(Node<Type> *&,Node<Type> *&,Node<Type> *&);
