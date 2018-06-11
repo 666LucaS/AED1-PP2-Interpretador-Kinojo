@@ -510,11 +510,8 @@ unsigned long int HashTable<Type>::searchTable(Type item){
 
 template<typename Type>
 void HashTable<Type>::removeTable(Type item){
-  Node<Type> * aux;
   int positionItem = searchTable(item);
-  aux = collisionTree[positionItem].search(item);
-  collisionTree[positionItem].remove(aux);
-  delete aux;
+  collisionTree[positionItem].remove(item);
 }
 
 template<typename Type>
